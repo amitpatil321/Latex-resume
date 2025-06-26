@@ -1,0 +1,239 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+\usepackage{multicol}
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Amit Patil}
+% How you want it to show up on the resume
+\newcommand{\yourWebsite}{website.com}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://website.com}
+\newcommand{\yourEmail}{amitpatil321@gmail.com}
+\newcommand{\yourPhone}{+91 98347 93703}
+\newcommand{\githubUserName}{amitpatil321}
+\newcommand{\linkedInUserName}{amitspatil}
+
+% An alternate profile section 
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsiteLink}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsiteLink}{\yourWebsite}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{8pt}
+    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
+    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+\section{Professional Summary}
+Senior frontend architect and technology leader with over 15+ years of experience building scalable, performant B2B and B2C web platforms. Proven expertise in designing micro-frontend architectures, mentoring cross-functional teams, and delivering enterprise-grade UI solutions using React, TypeScript, and modular design patterns. Skilled in frontend platform engineering, shared component libraries, system optimization, and developer experience (DX). Passionate about clean architecture, team enablement, and creating tech ecosystems that scale.
+
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Hobasa}{Associate Manager Application Development}{Remote (Pune)}{Apr 2023 – Nov 2024}
+HR-Finance Tech Solution \vspace{8pt}
+\begin{bullets}
+    \item Led a team of developers to deliver Sapvix's flagship B2B platform, achieving on-time delivery for 3 consecutive releases.
+    \item Designed and implemented the architecture for 2 additional internal platforms from scratch, improving operational efficiency and data flow consistency across teams.
+    \item Developed modular, reusable React component libraries and standardized frontend structures to accelerate delivery across projects.
+    \item Collaborated with senior management and other team leads to translate business goals into technical milestones through structured brainstorming and planning sessions.
+    \item Instituted strict code quality standards (ESLint, Prettier, Husky, review cycles) and mentored junior developers on modern development patterns and anti-patterns.
+    \item Authored internal documentation and UI development guidelines for future project onboarding and handoffs.
+    \item Introduced performance monitoring metrics and optimized frontend bundles, resulting in $\sim$40\% faster load times and $\sim$30\% reduction in build size. 
+    \item Continuously refined dev practices through feedback loops, peer mentoring, and training sessions with cross-functional teams.
+\end{bullets}
+\sectionsep
+
+
+\resumeHeading{Sapvixca (Hobasa)}{Senior Tech Lead}{Remote (Pune)}{Apr 2022 - Apr 2023}
+
+\vspace{5pt}
+
+\resumeHeading{Sapvixca (Hobasa)}{Senior Frontend Developer}{Remote (Pune)}{Sep 2019 - Apr 2022}
+
+\sectionsep
+
+\resumeHeading{The Asian Banker}{Senior Software Engineer}{Kuala Lulpur, Malaysia}{Aug 2011 – May 2019}
+\begin{bullets}
+    \item Developed in-house applications, user-facing websites, and event
+platforms using \textbf{React.js}, \textbf{HTML}, \textbf{CSS}, \textbf{JavaScript}, \textbf{PHP}, \textbf{MySQL}, \textbf{Modx}, and
+\textbf{WordPress}.
+    \item Built hybrid mobile applications using Angular.js and Ionic. - Assigned tasks to team members, ensuring timely completion and adherence to
+    \item Collaborated with the sales, event management, and executive teams to
+gather requirements and relay them effectively to development teams
+project deadlines.
+    \item Made key technology stack decisions for internal applications, optimizing
+performance and scalability. Liaised with third-party vendors to ensure
+seamless integration and project alignment.
+   \item Reviewed code for structure validation, security assessment, and browser, device, and OS compatibility.
+  \item Analyzed business requirements and designed, developed and implemented in-house software solutions for sales and management teams.
+  \item Researched emerging technologies, software packages, and hardware solutions for web development projects.
+  \item Implemented security protocols, including server security checklists, to safeguard applications.
+  \item Led complete redesigns of existing websites, enhancing navigation, visual appeal, and search engine rankings.
+  \item Developed websites and web applications using \textbf{ModX}, \textbf{PHP}, \textbf{CSS}, \textbf{JavaScript}, \textbf{Ionic}, \textbf{Angular.js}, and \textbf{React}.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{Mphasis (HP)}{Software Engineer}{Pune}{Apr 2010 – May 2011}
+\begin{bullets}
+      \item Contributed to the development and maintenance of \textbf{CYCLOPS}, an application utilized by \textbf{Telstra}, a leading government-owned company in Australia.
+      \item Addressed bug fixes, implemented new features, and provided ongoing support for the application.
+      \item Resolved client queries in a timely manner, ensuring smooth functionality and user satisfaction.
+      \item Conducted training sessions for users, introducing and explaining newly added features to enhance their experience.
+      \item Collaborated closely with onsite team members to understand and implement project requirements effectively.
+\end{bullets}
+\sectionsep
+
+\resumeHeading{codaemon software (Hexagon Software)}{Software Engineer}{Pune}{Aug 2007 – Apr 2010}
+\begin{bullets}
+      \item Involved in all phases of the Software Development Life Cycle (SDLC), including requirement gathering through communication with overseas clients, design (including PSD to HTML conversion), development, testing, and deployment.
+      \item Worked across various domains, including media and entertainment, social networking, advertising, and communication.
+      \item Analyzed requirements to design, develop, and implement software applications for multiple websites.
+      \item Determined coding requirements for site creation, including e-commerce functionality and specialized scripting.
+      \item Designed websites to be fully compatible with leading browsers such as \textbf{Firefox}, \textbf{Chrome}, and \textbf{Safari}.
+      % \item Continuously improved web pages and sites through design, implementation, and monitoring.
+      \item Created visually compelling and functional digital design concepts across various platforms, enhancing company branding and identity.
+      \item Acted as a dedicated full-time developer for 3 clients, including notable brands such as \textbf{C4D (Code for Design CMS)}, \textbf{Quickzilla}, \textbf{DSS (Direct Sales Solution)}, and \textbf{Paperdue}.
+      \item Utilized programming expertise in \textbf{PHP}, \textbf{MySQL}, \textbf{JavaScript}, and other libraries as required.
+\end{bullets}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Put school first and degree second if your school is reputable
+\educationHeading{Bachelor of Information Technology}{Bharati Vidyapeeth Collage of Engineering}{Kolhapur}{Mar 2004 - Jun 2007}
+
+\vspace{8pt}
+
+\educationHeading{Diploma in Information Technology}{Bharati Vidyapeeth Institute of Technology}{Palus (Sangli)}{June 2001 - July 2004}
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+
+\projectHeading{
+Classic snake and apple game}{https://amitpatil321.github.io/Snake-Game/}{React, Redux, Web Storage API}
+The classic Snake and Apple game built, offers players a nostalgic experience as they navigate a snake to devour apples while avoiding collisions with its own tail.\\
+\sectionsep
+  
+\projectHeading{Devoverflow}{https://devoverflow-delta.vercel.app/}{Nextjs, radix-ui, Tailwind, Clerk Auth, mongodb, Prisma, zod}
+A powerful Developer Community Platform that fosters collaboration, knowledge sharing.\\
+\sectionsep
+
+\projectHeading{Movie explorer}{http://tmdb-react.amitpatil.me/}{React, Context, TMDB Apis, Ant Design}
+The Movie Database (TMDB) is a popular, user editable database for movies and TV shows
+\sectionsep
+
+\projectHeading{Slack clone}{https://github.com/amitpatil321/React-slack-clone}{React.js, Redux.js, chatkit, Nodejs, Ant Design}
+Real-time team chat application supporting multiple chat rooms, typing indicators, and live message updates.\\
+\sectionsep
+
+\projectHeading{Google Keep clone}{https://github.com/amitpatil321/react-google-keep-clone}{React, Ant Design, Firebase}
+Google keep clone\\
+\sectionsep
+
+\projectHeading{And many more}{https://github.com/amitpatil321?tab=repositories}{}
+\sectionsep
+
+
+% --------------------------------------------------------------
+%     Skills
+% --------------------------------------------------------------
+% \section{Skills}
+% \begin{skillList}
+%     \singleItem{Frontend:}{React, Typescript, Redux, JavaScript, Tailwind, Framer Motion, HTML5, CSS3}
+%     \\
+%     \singleItem{Backend:}{Nodejs, Express, Web-sockets, Nextjs }
+%     \\
+%     \singleItem{Database:}{MySql, MongoDB, PostgreSQL, Supabase }
+%     \\
+%     \singleItem{Mobile:}{Ionic, Phonegap, Cordova}
+%     \\
+%     \singleItem{Desktop:}{Electron}
+%     \\
+%     \singleItem{Architecture and Patterns:}{Micro-frontends, Module Federation, Component-driven Design, Atomic Design Pattern} 
+%     \\
+%     \singleItem{UI Libraries}{Ant Design, Primereact, MUI, Bootstrap UI, Shadcn, RadixUI}
+%     \\
+%     \singleItem{Technology:}{Git, AWS, Azure, Docker}
+%     \\
+%     \singleItem{Visualization Libraries:}{Chartjs, AmCharts, Plotly}
+%     \\
+%     \singleItem{Testing:}{Cypress, Storybook, Jest}
+%     \\
+%     \singleItem{Logging:}{Sentry, Grafana}
+% \end{skillList}
+
+\section{Skills}
+\begin{multicols}{2}
+\begin{itemize}[leftmargin=*, itemsep=2pt, parsep=0pt, topsep=2pt]
+  \item \textbf{Frontend:} React, TypeScript, Redux, JavaScript, Tailwind, Framer Motion, HTML5, CSS3, Vite, Rspack, Webpack
+  \item \textbf{Backend:} Node.js, Express, WebSockets, Next.js
+  \item \textbf{Database:} MySQL, MongoDB, PostgreSQL, Supabase
+  \item \textbf{Mobile:} Ionic, PhoneGap, Cordova
+  \item \textbf{Desktop:} Electron
+  \item \textbf{Architecture \& Patterns:} Micro-frontends, Module Federation, Component-driven Design, Atomic Design
+  \item \textbf{UI Libraries:} Ant Design, PrimeReact, MUI, Bootstrap, ShadCN, Radix UI
+  \item \textbf{Technology:} Git, AWS, Azure, Docker
+  \item \textbf{Visualization:} Chart.js, AmCharts, Plotly
+  \item \textbf{Testing:} Cypress, Storybook, Jest
+  \item \textbf{Logging:} Sentry, Grafana
+  % \item \textbf{Build Tools:} Vite, Rspack, Webpack
+\end{itemize}
+\end{multicols}
+
+% A more concise alternate 
+% \begin{skillList}
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, Redux, Nodejs, Express, WebSockets, Tailwind, Framer Motion }%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{skillList}
+
+
+\end{document}
